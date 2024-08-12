@@ -6,6 +6,7 @@ const result = $('#result')
 const btnCopy = $('#btn-copy')
 
 btnCopy.addEventListener('click', () => {
+  if (!result.value) return
   navigator.clipboard.writeText(result.value)
   alert('Copied the text: ' + result.value)
 })
@@ -38,6 +39,7 @@ const result2 = $('#result2')
 const btnCopy2 = $('#btn-copy2')
 
 btnCopy2.addEventListener('click', () => {
+  if (!result2.value) return
   navigator.clipboard.writeText(result2.value)
   alert('Copied the text: ' + result2.value)
 })
