@@ -16,7 +16,7 @@ const formCream = $('#form-cream')
 formCream.addEventListener('submit', (event) => {
   event.preventDefault()
   const data = formCream.querySelector('input').value.trim()
-  result.value = round((data - 300) / 1500)
+  if (data) result.value = round((+data - 300) / 1500)
 })
 
 const formCream2 = $('#form-cream2')
@@ -24,7 +24,7 @@ const formCream2 = $('#form-cream2')
 formCream2.addEventListener('submit', (event) => {
   event.preventDefault()
   const data = formCream2.querySelector('input').value.trim()
-  result.value = round((data - 200) / 1500)
+  if (data) result.value = round((+data - 200) / 1500)
 })
 
 const formCream3 = $('#form-cream3')
@@ -32,7 +32,7 @@ const formCream3 = $('#form-cream3')
 formCream3.addEventListener('submit', (event) => {
   event.preventDefault()
   const data = formCream3.querySelector('input').value.trim()
-  result.value = round((data - 500) / 1500)
+  if (data) result.value = round((+data - 500) / 1500)
 })
 
 const result2 = $('#result2')
@@ -49,7 +49,7 @@ const formCoke = $('#form-coke')
 formCoke.addEventListener('submit', (event) => {
   event.preventDefault()
   const data = formCoke.querySelector('input').value.trim()
-  result2.value = round((data - 1) * 0.8)
+  if (data) result2.value = round((+data - 1) * 0.8)
 })
 
 const formSprite = $('#form-sprite')
@@ -57,5 +57,5 @@ const formSprite = $('#form-sprite')
 formSprite.addEventListener('submit', (event) => {
   event.preventDefault()
   const data = formSprite.querySelector('input').value.trim()
-  result2.value = round((data - 0.9) * 0.8)
+  if (data) result2.value = round((+data - 0.9) * 0.8)
 })
