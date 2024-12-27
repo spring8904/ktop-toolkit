@@ -1,6 +1,6 @@
 const $ = document.querySelector.bind(document)
 
-const round = (num) => Math.round(num * 100) / 100
+const round = (num) => Math.floor(num * 100) / 100
 
 const result = $('#result')
 const btnCopy = $('#btn-copy')
